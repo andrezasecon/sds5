@@ -72,10 +72,8 @@
 				<configuration>
 					<archive>
 						<manifest>
-
 							<!-- give full qualified name of your main class-->
 							<mainClass>com.andrezasecon.dsmeta.DsmetaApplication</mainClass>
-
 						</manifest>
 					</archive>
 				</configuration>
