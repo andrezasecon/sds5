@@ -63,9 +63,22 @@
 	<build>
 		<plugins>
 			<plugin>
+
+				<!-- Building an executable jar -->
+
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
+				<artifactId>maven-jar-plugin</artifactId>
 				<version>3.1.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+
+							<!-- give full qualified name of your main class-->
+							<mainClass>com.andrezasecon.dsmeta.DsmetaApplication</mainClass>
+
+						</manifest>
+					</archive>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
